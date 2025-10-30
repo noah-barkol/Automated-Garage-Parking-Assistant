@@ -13,7 +13,7 @@ This change correlates to the car’s closing distance toward the wall — provi
 ## Demo Video
 
 [![Watch the demo](https://img.youtube.com/vi/wNS5gxbRVsM/hqdefault.jpg)](https://youtu.be/wNS5gxbRVsM?si=g-67zj3yJi1HfWGF)  
-🎬 **YouTube Link:** [Smart Garage Parking Assistant Demo](https://youtu.be/wNS5gxbRVsM?si=g-67zj3yJi1HfWGF)
+YouTube Link: [Smart Garage Parking Assistant Demo](https://youtu.be/wNS5gxbRVsM?si=g-67zj3yJi1HfWGF)
 
 ---
 
@@ -36,7 +36,7 @@ When the car moves again, the system detects motion and reactivates LED feedback
 - Accurate LiDAR distance measurement with the TFmini Plus
 - Dynamic RGB LED guidance based on distance thresholds
 - Automatic standby mode for energy efficiency
-- Built with Arduino Nano ESP32*for fast processing and optional Wi-Fi functionality
+- Built with Arduino Nano ESP32 for fast processing and optional Wi-Fi functionality
 - Ideal for tight garage spaces and DIY smart home integrations
 
 ---
@@ -71,7 +71,7 @@ Platform: Arduino IDE
 
 Board: Arduino Nano ESP32 (ABX00083)
 
-Note: Feel free to reference the source code that is titled finalGarage.ino. You can easily adjust distance thresholds and LED brightness to make the project work for different cars and situations. How to upload
+Note: Feel free to reference the source code that is titled finalGarage.ino. You can easily adjust distance thresholds and LED brightness to make the project work for different cars and situations. You can upload updated code onto the microcontroller by USB-C connection.
 
 ## Required Libraries
 
@@ -88,18 +88,18 @@ Make sure to install these from Arduino IDE → Sketch → Include Library → M
 
 | Component | Arduino Pin | Notes |
 |------------|--------------|-------|
-| TFmini Plus TX | RX (GPIO16) | UART communication |
-| TFmini Plus RX | TX (GPIO17) | UART communication |
-| WS2812B LED Data | GPIO6 | Defined as `LED_PIN` in code |
-| Power (VCC) | 5V | Shared between LiDAR and LED strip |
-| Ground (GND) | GND | Common ground connection |
+| TFmini Plus TX | RX0 (GPIO43) | UART communication |
+| TFmini Plus RX | TX1 (GPIO44) | UART communication |
+| WS2812B LED Data | D2 (GPIO5) | Defined as `LED_PIN` in code |
+| Power (VCC) | VBUS | Provides 5V shared between LiDAR and LED strip |
+| Ground (GND) | Blank white PIN | Common ground connection |
 
 
 
 ```markdown
-![Wiring Diagram](images/wiring.jpg)
-![Setup View](images/setup.jpg)
-![Final Installation](images/final.jpg)
+![Wiring Diagram](IMG_6008.jpeg)
+![Final Installation](IMG_6014.jpeg)
 
 
-License and credits
+MIT License  
+© 2025 Noah Barkol
