@@ -50,8 +50,8 @@ When the car moves again, the system detects motion and reactivates LED feedback
 | Benewake TFmini Plus LiDAR Sensor (Waterproof IP65) | 1 | Distance measurement (UART) |
 | Resistor (330 Ω) | 1 | Data line protection for LED strip |
 | BTF-LIGHTING WS2812B RGB LED Strip (3.28 ft, 60 LEDs) | 1 | Individually addressable RGB strip |
-| 22 AWG Wire | 1 | For general wiring connections |
-| BTF-LIGHTING 3-Pin JST SM LED Connector (20AWG) | 1 | Extension cable for WS2812B |
+| 22 AWG Wire | 3-4 color variations | For general wiring connections |
+| BTF-LIGHTING 3-Pin JST SM LED Connector (20AWG) | 1 | Two meter extension cable for WS2812B LED strip|
 | Capacitor (1000 µF) | 1 | Prevents voltage spikes for LEDs |
 | Arduino Nano ESP32 with Headers [ABX00083] | 1 | Microcontroller with Wi-Fi support |
 
@@ -94,12 +94,8 @@ Make sure to install these from Arduino IDE → Sketch → Include Library → M
 | Power (VCC) | VBUS | Provides 5V shared between LiDAR and LED strip |
 | Ground (GND) | Blank white PIN | Common ground connection |
 
-
-
-```markdown
-![Wiring Diagram](IMG_6008.jpeg)
-![Final Installation](IMG_6014.jpeg)
-
+![Wiring Diagram](images/IMG_6008.jpeg)
+![Final Installation](images/IMG_6014.jpeg)
 
 MIT License  
 © 2025 Noah Barkol
