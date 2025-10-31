@@ -65,7 +65,7 @@ When the car moves again, the system detects motion and reactivates LED feedback
 
 ---
 ## Code
-Language: C++
+Language: C/C++
 
 Platform: Arduino IDE
 
