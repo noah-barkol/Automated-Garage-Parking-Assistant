@@ -1,12 +1,10 @@
 # Smart Garage Parking Assistant
 
-This project demonstrates a Smart Garage Parking Assistant built using the Benewake TFmini Plus LiDAR sensor and a WS2812B RGB LED strip.  
-It takes up no floor space while maintaining a sleek, modern design.
+This project demonstrates a Smart Garage Parking Assistant built using the Benewake TFmini Plus LiDAR sensor and a WS2812B RGB LED strip.
 
-The system measures the distance between the top of the car and the ceiling-mounted LiDAR sensor.  
-As the car moves forward, the detected distance decreases because higher parts of the vehicle (like the windshield or roof) approach the sensor.  
+The system measures the distance between the top of the car and the ceiling-mounted LiDAR sensor, effectively taking up no floor space. As the car moves forward, the detected distance decreases because higher parts of the vehicle (like the windshield or roof) approach the sensor.  
 
-This change correlates to the car’s closing distance toward the wall — providing color-based LED guidance in real time.  
+This change correlates to the car’s closing distance toward the wall — providing color-based LED guidance on the wall in real time.  
 
 ---
 
@@ -25,18 +23,16 @@ YouTube Link: [Smart Garage Parking Assistant Demo](https://youtu.be/wNS5gxbRVsM
 | 🟧 Yellow / Orange | Distance < 83 in (210.82 cm) OR Distance == 0 | Getting close — Distance feeback is 0 when sensor detects windshield|
 | 🟥 Red | Distance < 66 in (167.64 cm) | Perfect parking range |
 
-After the car remains parked for several seconds, the LED strip automatically turns off to conserve power.  
-When the car moves again, the system detects motion and reactivates LED feedback.
+After the car remains parked for several seconds, the LED strip automatically turns off to conserve power. When the car moves again, the system detects motion and reactivates LED feedback.
 
 ---
 
 ## Features
 
-- Compact, ceiling-mounted setup
+- Ceiling-mounted setup
 - Accurate LiDAR distance measurement with the TFmini Plus
 - Dynamic RGB LED guidance based on distance thresholds
-- Automatic standby mode for energy efficiency
-- Built with Arduino Nano ESP32 for fast processing and optional Wi-Fi functionality
+- Automatic functionality for energy efficiency
 - Ideal for tight garage spaces and DIY smart home integrations
 
 ---
@@ -45,7 +41,7 @@ When the car moves again, the system detects motion and reactivates LED feedback
 
 | Item | Quantity | Description |
 |------|-----------|-------------|
-| 400-point Solderless Breadboard | 1 | For circuit prototyping |
+| 830-point Solderless Breadboard | 1 | For circuit prototyping |
 | USB-C Cable (Power) | 1 | Powers Arduino Nano ESP32 |
 | Benewake TFmini Plus LiDAR Sensor (Waterproof IP65) | 1 | Distance measurement (UART) |
 | Resistor (330 Ω) | 1 | Data line protection for LED strip |
@@ -59,9 +55,9 @@ When the car moves again, the system detects motion and reactivates LED feedback
 
 | Tool / Material | Quantity | Purpose |
 |------------------|-----------|----------|
-| Double-Sided Tape | 1 | Mounts components to ceiling securely |
+| Double-Sided Tape | 1 | Used for minor connections like the sensor on the doorstop |
 | Wire Stripper & Cutter (22–10 AWG) | 1 | For trimming and connecting wires |
-| Velcro Strips | 1 | Optional — for modular mounting or removal |
+| Velcro Strips | 1 | Mounts components to ceiling |
 
 ---
 ## Code
@@ -71,11 +67,11 @@ Platform: Arduino IDE
 
 Board: Arduino Nano ESP32 (ABX00083)
 
-Note: Feel free to reference the source code that is titled finalGarage.ino. You can easily adjust distance thresholds and LED brightness to make the project work for different cars and situations. You can upload updated code onto the microcontroller by USB-C connection.
+Note: Feel free to reference the source code that is titled finalGarage.ino. You can easily adjust distance thresholds and LED brightness to make the project work for different cars and situations. To upload the updated code, plug your device into the microcontroller by USB-C connection.
 
 ## Required Libraries
 
-Make sure to install these from Arduino IDE → Sketch → Include Library → Manage Libraries...
+Install these libraries from Arduino IDE → Sketch → Include Library → Manage Libraries...
 
 | Library | Author | Purpose | 
 |----------|---------|----------|
