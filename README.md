@@ -1,10 +1,10 @@
 # Smart Garage Parking Assistant
 
-This project demonstrates a Smart Garage Parking Assistant built using the Benewake TFmini Plus LiDAR sensor and a WS2812B RGB LED strip.
+This project demonstrates an Automated Garage Parking Assistant built using the Benewake TFmini Plus LiDAR sensor and a WS2812B RGB LED strip.
 
-The system measures the distance between the top of the car and the ceiling-mounted LiDAR sensor, effectively taking up no floor space. As the car moves forward, the detected distance decreases because higher parts of the vehicle (like the windshield or roof) approach the sensor.  
+The system measures the distance between the top of the car and the ceiling-mounted LiDAR sensor, effectively taking up no floor space. As the car moves forward, the detected distance decreases due to higher parts of the vehicle (the windshield or roof) approaching the sensor.  
 
-This change correlates to the car’s closing distance toward the wall — providing color-based LED guidance on the wall in real time.  
+This change correlates to the car’s closing distance toward the wall, providing color-based LED guidance on the wall in real time.  
 
 ---
 
@@ -23,7 +23,7 @@ YouTube Link: [Smart Garage Parking Assistant Demo](https://youtu.be/wNS5gxbRVsM
 | 🟧 Yellow / Orange | Distance < 83 in (210.82 cm) OR Distance == 0 | Getting close — Distance feeback is 0 when sensor detects windshield|
 | 🟥 Red | Distance < 66 in (167.64 cm) | Perfect parking range |
 
-After the car remains parked for several seconds, the LED strip automatically turns off to conserve power. When the car moves again, the system detects motion and reactivates LED feedback.
+After the car remains parked for 3 seconds, the LED strip automatically turns off to conserve power. When the car moves again, the system detects motion and reactivates LED feedback.
 
 ---
 
@@ -31,7 +31,7 @@ After the car remains parked for several seconds, the LED strip automatically tu
 
 - Ceiling-mounted setup
 - Accurate LiDAR distance measurement with the TFmini Plus
-- Dynamic RGB LED guidance based on distance thresholds
+- RGB LED guidance based on distance thresholds
 - Automatic functionality for energy efficiency
 - Ideal for tight garage spaces and DIY smart home integrations
 
@@ -71,7 +71,7 @@ Note: Feel free to reference the source code that is titled finalGarage.ino. You
 
 ## Required Libraries
 
-Install these libraries from Arduino IDE → Sketch → Include Library → Manage Libraries...
+Install these libraries from Arduino IDE → Sketch → Include Library → Manage Libraries
 
 | Library | Author | Purpose | 
 |----------|---------|----------|
@@ -88,7 +88,7 @@ Install these libraries from Arduino IDE → Sketch → Include Library → Mana
 | TFmini Plus RX | TX1 (GPIO44) | UART communication |
 | WS2812B LED Data | D2 (GPIO5) | Defined as `LED_PIN` in code |
 | Power (VCC) | VBUS | Provides 5V shared between LiDAR and LED strip |
-| Ground (GND) | Blank white PIN | Common ground connection |
+| Ground (GND) | Blank white pin | Common ground connection |
 
 ![Wiring Diagram](images/IMG_6008.jpeg)
 ![Final Installation](images/IMG_6014.jpeg)
