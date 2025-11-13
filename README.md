@@ -20,7 +20,7 @@ YouTube Link: [Smart Garage Parking Assistant Demo](https://youtu.be/wNS5gxbRVsM
 | LED Color | Condition | Meaning |
 |------------|------------|----------|
 | 🟩 Green | Distance < 100 in (254 cm) | Safe distance — hood of car |
-| 🟧 Yellow / Orange | Distance < 83 in (210.82 cm) OR Distance == 0 | Getting close — Distance feeback is 0 when sensor detects windshield|
+| 🟨 Yellow | Distance < 83 in (210.82 cm) OR Distance == 0 | Getting close — Distance feeback is 0 when sensor detects windshield|
 | 🟥 Red | Distance < 66 in (167.64 cm) | Perfect parking range |
 
 After the car remains parked for 3 seconds, the LED strip automatically turns off to conserve power. When the car moves again, the system detects motion and reactivates LED feedback.
