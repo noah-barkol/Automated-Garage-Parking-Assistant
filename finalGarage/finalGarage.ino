@@ -15,8 +15,8 @@ const int TX_PIN = 44;       // Green wire on TFMini Plus -> GPIO44 (TX1 on boar
 Adafruit_NeoPixel strip(NUM_LEDS, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 // Distance Thresholds for Different Color Stages
-const int MIN_DISTANCE = 167.64;   // 66 in - perfect sport (red)
-const int MID_DISTANCE = 210.82;   // 83 in - moderate range (orange)
+const int MIN_DISTANCE = 167.64;   // 66 in - perfect spot (red)
+const int MID_DISTANCE = 210.82;   // 83 in - moderate range (yellow)
 const int MAX_DISTANCE = 254;   // 100 in - (off)
 
 // Timing and parking detection
@@ -26,7 +26,7 @@ const unsigned long readInterval = 250; // read sensor every 250ms
 // Variables for parked detection (checks if system should stop)
 int16_t lastDist = -1;            // last measured distance
 unsigned long lastChangeTime = 0; // last time distance changed
-const unsigned long parkedTimeout = 3000; // 3 seconds parked timeout 
+const unsigned long parkedTimeout = 3000; // 3 seconds parked timeout to ensure clarity for driver
 
 void setup() {
   Serial.begin(115200);
@@ -82,7 +82,7 @@ void loop() {
         }
       } 
       else if (dist < MID_DISTANCE || dist == 0) {   // When sensor detects the glass of the windshield (when the LED should be yellow), the distance returned is 0
-        setAllLeds(strip.Color(255, 165, 0));        // orange
+        setAllLeds(strip.Color(255, 165, 0));        // orange (appears yellow)
       } 
       else {
         setAllLeds(strip.Color(0, 255, 0));          // green
