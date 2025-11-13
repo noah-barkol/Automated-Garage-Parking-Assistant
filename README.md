@@ -67,7 +67,7 @@ Platform: Arduino IDE
 
 Board: Arduino Nano ESP32 (ABX00083)
 
-Note: Feel free to reference the source code that is titled finalGarage.ino. You can easily adjust distance thresholds and LED brightness to make the project work for different cars and situations. To upload the updated code, plug your device into the microcontroller by USB-C connection.
+Note: Feel free to reference the source code that is titled parking-system-code.ino under the folder, arduino-code. You can easily adjust distance thresholds and LED brightness to make the project work for different cars and situations. To upload the updated code, plug your device into the microcontroller by USB-C connection.
 
 ## Required Libraries
 
@@ -90,8 +90,8 @@ Install these libraries from Arduino IDE → Sketch → Include Library → Mana
 | Power (VCC) | VBUS | Provides 5V shared between LiDAR and LED strip |
 | Ground (GND) | Blank white pin | Common ground connection |
 
-![Wiring Diagram](images/IMG_6008.jpeg)
-![Final Installation](images/IMG_6014.jpeg)
+![Wiring Diagram](images/wiring-diagram.jpeg)
+![Final Installation](images/ceiling-setup.jpeg)
 
 MIT License  
 © 2025 Noah Barkol
