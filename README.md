@@ -90,7 +90,7 @@ Install these libraries from Arduino IDE → Sketch → Include Library → Mana
 | Power (VCC) | VBUS | Provides 5V shared between LiDAR and LED strip |
 | Ground (GND) | Blank white pin | Common ground connection |
 
-![Wiring Diagram](images/wiring.jpeg)
+![Wiring Diagram](images/IMG_6008.jpeg)
 ![Final Installation](images/ceiling-setup.jpeg)
 
 MIT License  
